@@ -1,0 +1,14 @@
+pwd - Print Working Directory
+ls - list the items in working Directory
+cd - Change Directory
+clear - Clears the terminal
+touch file.txt - Creates a new file in the current Directory
+rm file.txt - Delete file.txt
+mkdir folder - create Directory
+rmdir folder - delete directory, deletes only if it is empty
+rmdir -r folder - delete directory with files in it
+echo 'string' - prints string in terminal
+echo 'string' > file.txt - write string the file.txt it can create a file if it doesn't exist, NOTE: it overwrites the content in the file
+echo 'string' >> file.txt - This appends instead of overwriting
+cat hello.txt - Reads from the file
+cat hello.txt > hello_copy.txt - It reads and copies the content to the 2nd file
