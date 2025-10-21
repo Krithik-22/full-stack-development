@@ -1,0 +1,12 @@
+{
+  "name": "wild-horizons",
+  "version": "1.0.0",
+  "description": "a dataset of the world's most intresting places",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start":"node server.js"
+  },
+  "author": "Krithik",
+  "license": "ISC"
+}

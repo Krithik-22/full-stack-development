@@ -1,0 +1,23 @@
+How to test a server endpoint with VS Code's REST Client
+Goal: To test a server endpoint without a browser. The server's res.end() output is sent over the network, not to the terminal.
+Tool: REST Client extension for VS Code.
+Setup
+Install: REST Client extension by Huachao Mao in VS Code.
+Run Server: Start your Node.js server (node your-file.js).
+Create Test File: Make a new file, request.http or request.rest.
+Usage
+Write Request: In request.http, type GET http://localhost:8000/.
+Send Request: Click "Send Request" above the URL in your request.http file.
+View Response: A new panel opens with the server's response (Heyy!! I have created my first server.).
+
+Pros
+Integrated: Test APIs directly within VS Code, avoiding context switching.	
+Version Controlled: .http files are plain text, easily shared via Git.	
+Lightweight: Fast for simple, on-the-fly testing.	
+Dynamic Variables: Can extract data from one response for the next request.	
+
+Cons
+Less Features: Not as robust as Postman for complex needs.
+Text-Based: Requires typing requests; no graphical UI for building them.
+Learning Curve: Advanced features like variables need specific syntax.
+VS Code Dependent: Only works within the VS Code environment.
