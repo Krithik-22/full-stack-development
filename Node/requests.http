@@ -1,5 +1,17 @@
 ###
 
-GET http://localhost:8000
+GET http://localhost:8000/api
+
+###
+
+GET http://localhost:8000/api/dest
+
+###
+
+GET http://localhost:8000/api/continent/Asia
+
+###
+
+GET http://localhost:8000/api/country/china
 
 ###
