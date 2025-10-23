@@ -1,0 +1,13 @@
+{
+  "name": "book-api",
+  "version": "1.0.0",
+  "description": "A mini Node.js API using the native HTTP module to serve and filter book data.",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start":"node server.js",
+    "dev": "node --watch server.js"
+  },
+  "author": "Krithik",
+  "license": "ISC"
+}
