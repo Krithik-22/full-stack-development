@@ -9,11 +9,11 @@ document.getElementById('uploadForm').addEventListener('submit', async (e) => {
   console.log('Submitting:', newSighting);
 
   // This will send data to backend (once implemented)
-  // const res = await fetch('/api/upload', {
-  //   method: 'POST',
-  //   headers: { 'Content-Type': 'application/json' },
-  //   body: JSON.stringify(newSighting),
-  // });
+  const res = await fetch('/api/upload-sightings', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(newSighting),
+  });
 
   // const result = await res.text();
   // alert(result);

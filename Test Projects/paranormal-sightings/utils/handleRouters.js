@@ -6,3 +6,7 @@ export const handleGet = async (res) => {
         const payload = JSON.stringify(data)
         sendResponse(res, 200, 'application/json', payload)
 }
+
+export const handlePost = async (res) => {
+        console.log("handling POST Request......");
+}
