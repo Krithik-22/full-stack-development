@@ -1,0 +1,53 @@
+body {
+  font-family: sans-serif;
+  background-color: #f3f3f3;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  background: #111;
+  padding: 10px;
+}
+
+nav a {
+  color: white;
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main {
+  padding: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  gap: 10px;
+}
+
+input, textarea, button {
+  padding: 8px;
+  font-size: 1rem;
+}
+
+button {
+  cursor: pointer;
+  background-color: #222;
+  color: white;
+  border: none;
+  border-radius: 5px;
+}
+
+.sighting {
+  background: white;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px #ccc;
+}

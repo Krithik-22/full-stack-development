@@ -1,0 +1,12 @@
+{
+  "name": "paranormal-sightings",
+  "version": "1.0.0",
+  "description": "Read and upload your paranormal sightings and experiences",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "Krithik",
+  "license": "ISC"
+}

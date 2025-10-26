@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Upload a Sighting</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/read.html">Read Sightings</a>
+      <a href="/upload.html">Upload</a>
+    </nav>
+
+    <main>
+      <h2>Upload Your Paranormal Experience 👀</h2>
+      <form id="uploadForm">
+        <input type="text" name="title" placeholder="Title" required />
+        <input type="text" name="location" placeholder="Location" required />
+        <input type="date" name="date" required />
+        <textarea name="details" placeholder="Describe what happened..." required></textarea>
+        <button type="submit">Submit</button>
+      </form>
+    </main>
+
+    <script src="/js/main.js"></script>
+    <script src="/js/upload.js"></script>
+  </body>
+</html>
