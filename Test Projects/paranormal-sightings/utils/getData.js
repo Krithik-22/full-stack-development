@@ -1,5 +1,6 @@
 import path from 'node:path'
 import fs from 'node:fs/promises'
+import { sanitizeBody } from './sanitizeBody.js'
 
 const dataPath = path.join('data','sightings.json')
 
@@ -18,8 +19,9 @@ export const getData = async () => {
 export const updateData = async (parsedBody) => {
     try{
         const data = await getData()
-        data.push(parsedBody)
-        fs.writeFile(dataPath, JSON.stringify(data))
+        const sanitizedData = sanitizeBody(parsedBody)
+        data.push(sanitizedData)
+        fs.writeFile(dataPath, JSON.stringify(data), 'utf-8')
     } catch(err){
         console.log(err)
     }
