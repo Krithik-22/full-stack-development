@@ -10,7 +10,12 @@ export const handleGet = async (res) => {
 
 export const handlePost = async (req, res) => {
         console.log("handling POST Request......");
-        const parsedBody = await parseJSONBody(req)
-        updateData(parsedBody)
-        sendResponse(res, 200, 'application/json', JSON.stringify(parsedBody))
+
+        try {
+            const parsedBody = await parseJSONBody(req)
+            updateData(parsedBody)
+            sendResponse(res, 201, 'application/json', JSON.stringify(parsedBody))                
+        } catch (error) {
+            sendResponse(res, 400, 'application/json', JSON.stringify(err))                
+        }
 }
