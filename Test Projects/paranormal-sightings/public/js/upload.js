@@ -15,9 +15,9 @@ document.getElementById('uploadForm').addEventListener('submit', async (e) => {
     body: JSON.stringify(newSighting),
   });
 
-  // const result = await res.text();
-  // alert(result);
+  const result = await res.text();
+  alert(result);
 
-  alert('Form submitted (frontend only for now)');
+  // alert('Form submitted (frontend only for now)');
   e.target.reset();
 });
