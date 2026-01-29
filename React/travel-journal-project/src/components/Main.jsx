@@ -18,9 +18,18 @@ const handleSubmit = (formData) => {
             <input type="text" aria-label='add ingredient' name='ingredient' />
             <button type='submit'>Add Ingredient</button>
         </form>
-        <ul>
-            {ingredientItemList}
-        </ul>
+        {ingredients.length > 0 && 
+            <section>
+                <h2>Ingredients:</h2>
+                <ul>{ingredientItemList}</ul>
+                {ingredients.length >= 4 &&
+                    <div>
+                        <h3>Ready for a Recipe? Click on the below button to generate a recipe!</h3>
+                        <button>Get a Recipe</button>
+                    </div>
+                }
+            </section>
+        }
     </>
   )
 }
